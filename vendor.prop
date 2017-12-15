@@ -121,6 +121,10 @@ vendor.fm.a2dp.conc.disabled=false
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fling Velocity
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # GMS
 ro.com.google.clientidbase.ms=android-asus-tpin
 ro.com.google.rlzbrandcode=ASUP
