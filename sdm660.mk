@@ -204,10 +204,7 @@ PRODUCT_COPY_FILES += \
 
 # IPACM
 PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    ipacm
 
 # IPC router config
 PRODUCT_COPY_FILES += \
@@ -354,8 +351,7 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2
+    librmnetctl
 
 # Recovery
 PRODUCT_PACKAGES += \
