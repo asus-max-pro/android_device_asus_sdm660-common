@@ -166,6 +166,13 @@ PRODUCT_PACKAGES += \
     qcom.fmradio \
     qcom.fmradio.xml
 
+# Google Camera Go
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/com.google.android.apps.cameraslite.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.apps.cameraslite.xml
+
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-impl-qti \
