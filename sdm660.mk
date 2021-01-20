@@ -40,8 +40,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener \
-    tinymix
+    libvolumelistener
 
 PRODUCT_PACKAGES += \
     liba2dpoffload \
@@ -116,17 +115,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
-
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
-    liboverlay \
     libtinyxml \
     libqdMetaData \
     libqdMetaData.system
@@ -189,8 +183,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -209,19 +203,11 @@ PRODUCT_COPY_FILES += \
 
 # IPACM
 PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    ipacm
 
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
-
-# IPv6
-PRODUCT_PACKAGES += \
-    ethertypes \
-    libebtc
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -250,12 +236,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
-
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
-    libandroid_net \
-    netutils-wrapper-1.0
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -310,7 +290,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
-    frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -369,11 +348,8 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.2 \
     libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2
+    librmnetctl
 
 # Recovery
 PRODUCT_PACKAGES += \
@@ -436,10 +412,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# TextClassifier
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
@@ -452,10 +424,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
-
-# VNDK
-PRODUCT_PACKAGES += \
-    vndk_package
 
 # FIXME: master: compat for libprotobuf
 # See https://android-review.googlesource.com/c/platform/prebuilts/vndk/v28/+/1109518
@@ -473,7 +441,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     TetheringConfigOverlay \
-    wcnss_service \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
